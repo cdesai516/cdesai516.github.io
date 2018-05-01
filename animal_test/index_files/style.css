@@ -1,0 +1,44 @@
+.div0 {
+position: fixed;
+padding:0;
+margin:0;
+width: 200px;
+height: 100px;
+z-index: -1;
+opacity: 0.5;
+}
+body {
+    background-image:url("https://pixabay.com/en/sunrise-space-outer-globe-world-earth-su-1756274/");
+    background-color:rgba(28, 29, 34, 0.8);
+}
+
+.contact {
+position: absolute;
+top: -75px;
+z-index: -100;
+left: 0;
+padding: 40px;
+margin: 0;
+text-align: center;
+background:gold;
+}
+
+.about {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    background: rgb(68, 90, 32);
+    }
+
+.hobby {
+    position: fixed;
+    top: 200;
+    left: 0;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    background: rgb(3, 1, 43);
+}
