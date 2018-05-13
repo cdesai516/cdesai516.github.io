@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<body>
+
+<input type="text" id="keyEvent" onkeypress="d">
+
+  <script>
+
+
+  var car = {
+    make: "Honda",
+    model: "Fit",
+    color: "Blue Raspberry",
+    mileage: 3000,
+    isWorking: true,
+
+    driveToWork: function() {
+
+      alert("Old Mileage: " + this.mileage);
+
+      this.mileage = this.mileage + 8;
+
+      alert("New mileage: " + this.mileage);
+    },
+
+    driveAroundWorld: function() {
+
+
+      alert("Old Mileage: " + this.mileage);
+
+      this.mileage = this.mileage + 24000;
+
+      alert("New Mileage: " + this.mileage);
+      alert("Car needs a tuneup!");
+
+      this.isWorking = false;
+    },
+
+    getTuneUp: function() {
+      alert("Car is ready to go!");
+      this.isWorking = true;
+    },
+
+    honk: function() {
+      alert("Honk! Honk!");
+    },
+    presskeyd: function () {
+
+      onkeypress(driveToWork)
+
+    }
+  };
+
+
+    document.onkeyup = function(driveToWork) {
+    var userGuess = event.key;
+    if ((userGuess ==="d")) {
+      alert(car.driveToWork());
+}
+      if  ((userGuess==="d")) {
+        console.log( +" " + car.milage + 8)
+      }
+}
+
+  </script>
+</body>
+</html>
