@@ -25,7 +25,8 @@ width: 45%;
 background-color: blue;
 }
 
-aside{
+aside {
+
   float: right;
   display: inline-block;
   background-color: red;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="reset.css" class="stylesheet">
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="jumbotron-fluid background py-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 my-3">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.youtube.com/watch?v=KJeRLolub8E" frameborder="3"></iframe>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 my-3">
+        <h1>Hangin With Man</h1>
+        <button id="new-game-button">
+          <i class="fas fa-gamepad"></i>
+          Start A new Game
+        </button>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center py-5 bg-primary"      id=placeHolderSection>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 my-3">
+            <h2>fill these in
+            <br />
+            <span id="placeholders">
+              _ _ _
+            </span>
+          </h2>
+          </div>
+          <div class="col-12 col-md-6 my-3">
+            <h2>
+              in correct
+              <br />
+              <span id="guessedLetters"></span>
+            </h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-4 text-center py-5">
+    <h3>
+      Guess Left: <span id="guessLeft">0</span>
+    </h3>
+  </div>
+  <div class="col-12 col-md-4 text-center py-5">
+    <h3>
+      Wins: <span id="wins">0</span>
+    </h3>
+  </div>
+  <div class="col-12 col-md-4 text-center py-5">
+    <h3>
+      Losses: <span id="losses">0</span>
+    </h3>
+  </div>
+</div>
+</body>
+
+<script src="game_function.js"></script>
+<!-- scripit init-->
+
+<script src="js/custom.min.js"></script>
+</html>
